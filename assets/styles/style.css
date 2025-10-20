@@ -48,7 +48,7 @@ li{
   width: 100%;
   max-width: 500px;
   padding: 1rem;
-  
+  margin: 2rem auto;
   box-shadow: 4px 4px 10px hsl(205 33% 90% / .3);
 }
 .notif__header{
