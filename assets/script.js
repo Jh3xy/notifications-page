@@ -5,6 +5,12 @@
 let btn = document.querySelector('.notif__mark-read')
 let notifLists = document.querySelectorAll('.notif__list')
 let notifCount = document.querySelector('.notif__count')
+let unreadNotifs = document.querySelectorAll('.unread') //counts the total number of unread items
+
+notifCount.textContent = unreadNotifs.length
+// console.log(`you currently have ${} unread notifications`)
+
+
 
 // watch for a click on btn and toogle the "unread" class for each notifList
 btn.addEventListener("click", ()=>{
@@ -13,17 +19,13 @@ btn.addEventListener("click", ()=>{
    notifList.classList.remove('unread')
   }
  )
+ 
  //recount the total number of elements eith the unread class no its been removed 
  let unreadNotifs = document.querySelectorAll('.unread')
  
+ 
  //update the text content of notifCount so its the new total of "unread" elements....
  notifCount.textContent = unreadNotifs.length;
- /*
-  Debugging
- console.log(notifCount)
- console.log(`there are ${unreadNotifs.length} notifications left`)
- */
- 
 })
 
 
