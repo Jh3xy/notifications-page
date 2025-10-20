@@ -5,10 +5,127 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Frontend Mentor | Notifications Page</title>
-  
+  <!-- Preconnect to Google Fonts servers -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Preload and load the font -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet" media="all">
+  <link rel="stylesheet" href="./assets/styles/style.css?=v2">
 </head>
 <body>
-
+  
+  
+  
+  <div class="card">
+    <div class="notifications">
+      <div class="notif__header flex">
+        <div class="notif__title flex">
+          <h1>Notifications</h1>
+          <div class="notif__count">3</div>
+        </div>
+        <button class="notif__mark-read">
+          Mark all as read
+        </button>
+      </div>
+      <ul class="notif__lists">
+        <li class="notif__list flex unread">
+          <img src="./assets/images/avatar-mark-webber.png" alt="pfp" class="pfp">
+          <div class="notif__description">
+            <span class="user">Mark Webber</span>
+            <span class="notif__action">
+              reacted to your recent post <span class="post">My first tournament today!
+            </span>
+            <span class="tag"></span>
+            </span>
+            <span class="notif__time">1m ago</span>
+          </div>
+        </li>
+        <li class="notif__list flex unread">
+          <img src="./assets/images/avatar-angela-gray.png" alt="pfp" class="pfp">
+          <div class="notif__description">
+            <span class="user">Angela Gray</span>
+              <span class="notif__action">
+              followed you
+            </span>
+            <span class="tag"></span>
+            <span class="notif__time">5m ago</span>
+          </div>
+        </li>
+        <li class="notif__list flex unread">
+          <img src="./assets/images/avatar-jacob-thompson.png" alt="pfp" class="pfp">
+          <div class="notif__description">
+            <span class="user">Jacob Thompson</span>
+            <span class="notif__action group">
+              has joined your group <span class="post highlight">Chess Club
+              </span>
+              <span class="tag"> </span>
+            </span>
+            <span class="notif__time">1 day ago</span>
+            </div>
+          </li>
+        <li class="notif__list flex">
+            <img src="../assets/images/avatar-rizky-hasanuddin.png" alt="pfp" class="pfp">
+            
+            <div class="notif__description">
+              <span class="user">Rizky Hasanuddin</span>
+              <span class="notif__action group">
+              sent you a private message 
+              <span class="tag"> </span>
+              </span>
+              <span class="notif__time">1 day ago</span>
+              <div class="notif__message">
+                Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
+              </div>
+            </div>
+          </li>
+        <li class="notif__list flex space-between">
+          <div class="wrap flex">
+            <img src="./assets/images/avatar-kimberly-smith.png" alt="pfp" class="pfp">
+            <div class="notif__description">
+            <span class="user">Kimberly Smith</span>
+            <span class="notif__action group">
+              commented on your picture
+              <span class="tag"> </span>
+            </span>
+            <span class="notif__time">1 week ago</span>
+          </div>
+          </div>
+          <div class="pfp-wrap">
+            <img src="./assets/images/image-chess.png" alt="pfp" class="pfp user-pfp"/>
+          </div>
+        </li>
+        <li class="notif__list flex">
+          <img src="./assets/images/avatar-nathan-peterson.png" alt="pfp" class="pfp">
+          <div class="notif__description">
+            <span class="user">Nathan Peterson</span>
+            <span class="notif__action">
+              reacted to your recent post <span class="post">5 end-game strategies to increase your win rate
+            </span>
+            <span class="tag"></span>
+            </span>
+            <span class="notif__time">2 weeks ago</span>
+          </div>
+        </li>
+        <li class="notif__list flex">
+          <img src="./assets/images/avatar-anna-kim.png" alt="pfp" class="pfp">
+          <div class="notif__description">
+            <span class="user">Anna Kim</span>
+            <span class="notif__action group">
+              left the group <span class="post highlight">Chess Club
+              </span>
+              <span class="tag"> </span>
+            </span>
+            <span class="notif__time">2 weeks ago</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  
+  
   
 </body>
 </html>
