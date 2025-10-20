@@ -10,7 +10,15 @@ let unreadNotifs = document.querySelectorAll('.unread') //counts the total numbe
 notifCount.textContent = unreadNotifs.length
 // console.log(`you currently have ${} unread notifications`)
 
-
+notifLists.forEach(
+ (notifList)=>{
+  notifList.addEventListener("click", ()=>{
+   notifList.classList.toggle('unread')
+   unreadNotifs = document.querySelectorAll('.unread')
+   notifCount.textContent = unreadNotifs.length
+  })
+ }
+)
 
 // watch for a click on btn and toogle the "unread" class for each notifList
 btn.addEventListener("click", ()=>{
